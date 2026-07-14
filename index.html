@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise 14</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Exercise 14</h1>
+    <p>GAO ZHIYUAN · 26002305134</p>
+  </header>
+
+  <nav class="navbar">
+    <button class="nav-btn active" data-page="home">Homepage</button>
+    <button class="nav-btn" data-page="portfolio">Portfolio</button>
+    <button class="nav-btn" data-page="trivia">Trivia</button>
+  </nav>
+
+  <aside class="left">
+    <h3>Study Links</h3>
+    <ul>
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+      <li><a href="https://www.ritsumei.ac.jp/rsp/" target="_blank">Ritsumeikan RSP</a></li>
+      <li><a href="https://chatgpt.com" target="_blank">ChatGPT</a></li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <section id="home" class="page active">
+      <h2>Homepage</h2>
+      <div class="home-content">
+        <img src="photo.jpg" alt="Photo" class="home-photo">
+        <div class="home-text">
+          <p>My name is GAO. I'm a third-year student at Rikkyo University.</p>
+          <p>I really enjoy drawing and photography. I'd like to combine my hobbies with the research I'm interested in — specifically, developing intelligent interactive agents.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="page">
+      <h2>Portfolio</h2>
+      <div class="table-wrap">
+        <table class="portfolio-tbl">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Beijing Corporate Visit</td><td>Documented R&D environments at major Chinese tech companies through photography and video.</td><td>2024.01</td></tr>
+            <tr><td>2</td><td>Japan Study Tour</td><td>Visited Japanese universities and research labs with a 200+ student delegation.</td><td>2024.06</td></tr>
+            <tr><td>3</td><td>C++ QT Game</td><td>Built a desktop game with QT framework — coded logic, drew assets, managed builds.</td><td>2024.07</td></tr>
+            <tr><td>4</td><td>Web AI Chatbot</td><td>Developed an AI chatbot with LLM API, memory management, and dynamic UI.</td><td>2025.06</td></tr>
+            <tr><td>5</td><td>Live2D Desktop Pet</td><td>Created a lightweight local AI agent with Live2D model, Qwen LLM, and autonomous behavior.</td><td>2026.06 – Present</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="trivia" class="page">
+      <h2>Personality Quiz</h2>
+      <p id="quiz-desc">Answer 3 questions to find out your research style.</p>
+      <div id="quiz-area"></div>
+      <div id="quiz-result"></div>
+    </section>
+  </main>
+
+  <aside class="right">
+    <h3>Contact</h3>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+      <label for="msg">Message</label>
+      <textarea id="msg" name="msg" required rows="4" placeholder="Write something..."></textarea>
+
+      <button type="submit" class="btn">Send</button>
+      <p id="form-feedback" class="form-msg"></p>
+    </form>
+  </aside>
+
+  <footer class="footer">
+    <span id="footer-year"></span>
+    <span class="footer-links">
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
